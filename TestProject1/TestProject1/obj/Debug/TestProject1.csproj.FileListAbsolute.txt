@@ -1,0 +1,13 @@
+/Users/sameenasyed/RiderProjects/TestProject1/TestProject1/bin/Debug/TestProject1.dll
+/Users/sameenasyed/RiderProjects/TestProject1/TestProject1/bin/Debug/TestProject1.pdb
+/Users/sameenasyed/RiderProjects/TestProject1/TestProject1/bin/Debug/Newtonsoft.Json.dll
+/Users/sameenasyed/RiderProjects/TestProject1/TestProject1/bin/Debug/nunit.framework.dll
+/Users/sameenasyed/RiderProjects/TestProject1/TestProject1/bin/Debug/RestSharp.dll
+/Users/sameenasyed/RiderProjects/TestProject1/TestProject1/bin/Debug/Newtonsoft.Json.xml
+/Users/sameenasyed/RiderProjects/TestProject1/TestProject1/bin/Debug/RestSharp.xml
+/Users/sameenasyed/RiderProjects/TestProject1/TestProject1/bin/Debug/nunit.framework.xml
+/Users/sameenasyed/RiderProjects/TestProject1/TestProject1/obj/Debug/TestProject1.csprojAssemblyReference.cache
+/Users/sameenasyed/RiderProjects/TestProject1/TestProject1/obj/Debug/TestProject1.csproj.CoreCompileInputs.cache
+/Users/sameenasyed/RiderProjects/TestProject1/TestProject1/obj/Debug/TestProject1.csproj.CopyComplete
+/Users/sameenasyed/RiderProjects/TestProject1/TestProject1/obj/Debug/TestProject1.dll
+/Users/sameenasyed/RiderProjects/TestProject1/TestProject1/obj/Debug/TestProject1.pdb
