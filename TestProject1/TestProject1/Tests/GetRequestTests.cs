@@ -35,13 +35,21 @@ namespace TestProject1
         [Test]
         public void verifyTotalNumOfUsers()
         {
+            int i = 0;
             _restRequest = new RestRequest("/api/users?page=2", Method.GET);
             var response = _restClient.Execute(_restRequest);
             //Inbuilt Deserializer part of rest sharp framework
             var output = Helper.DeserializeResponse(response);
             var total = output["total"];
+            JArray obj = JArray.Parse(output["data"]);
+            while (i < obj.Count)
+            {
+                string email = (string) obj[i]["email"];
+                Console.WriteLine(email);
+                i++;
+            }
             Console.WriteLine("This total is from Inbuilt Deserialization :" + total);
-            //Jobject -NewJson
+            //Jobject -Newtonsoft
             var resultNewJson = Helper.DeserializeUsingJObject(response, "total");
             Console.WriteLine("NewJsonObj deserialized value is "+resultNewJson);
             Assert.That(resultNewJson?.ToString(),Is.EqualTo("12"),"Total record doesn't match");
