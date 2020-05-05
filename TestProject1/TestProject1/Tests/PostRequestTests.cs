@@ -1,8 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using NUnit.Framework;
 using RestSharp;
@@ -40,7 +36,7 @@ namespace TestProject1
 
         [Test]
         public void PostCallDummyApi()
-        {
+        { 
             _restRequest = new RestRequest("/api/v1/create", Method.POST);
            _restRequest.AddHeader("Content-Type", "application/json;charset=utf-8");
            _restRequest.AddJsonBody(new {name = "sam",salary = "1000",age = "26"});
@@ -54,18 +50,28 @@ namespace TestProject1
            //String name = dataFields["name"]?.ToString();
            Assert.That(resp.StatusCode.ToString(),Is.EqualTo("OK"));
            Assert.That(name,Is.EqualTo("sam"));
-
         }
 
         [Test]
         public void TestPostWithTypeClass()
         {
             _restRequest = new RestRequest("api/register",Method.POST);
-            _restRequest.AddJsonBody(new Users() {email = "eve.holt@reqres.in", password = "pistol"});
+            _restRequest.AddJsonBody(new Users {email = "eve.holt@reqres.in", password = "pistol"});
             var response = _restClient1.Execute<Users>(_restRequest);
             Console.WriteLine(response.Data.token);
             Assert.That(response.Data.token,Is.EqualTo("QpwL5tke4Pnpja7X4"));
 
         }
+        
+        [Test]
+        public void RetriveDataWithTypeClass()
+        {
+            _restRequest = new RestRequest("api/v1/create", Method.POST);
+            _restRequest.AddJsonBody(obj: new {name = "samee",age="25",salary = "2000"});
+            var response = _restClient.Execute<AddUserDummyApi>(_restRequest);
+            var output = new JsonDeserializer().Deserialize<AddUserDummyApi>(response);
+            Console.WriteLine(output.Data.Name);
+        } 
+      
     }
 }

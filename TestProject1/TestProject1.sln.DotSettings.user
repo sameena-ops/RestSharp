@@ -22,11 +22,21 @@
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=69673aae_002D11b3_002D4023_002D9e1a_002Da8840a103c91/@EntryIndexedValue">&lt;SessionState ContinuousTestingIsOn="False" ContinuousTestingMode="0" FrameworkVersion="{x:Null}" IsLocked="False" Name="verifyTotalNumOfUsers" PlatformMonoPreference="{x:Null}" PlatformType="{x:Null}" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
   &lt;Or&gt;
+    &lt;Or&gt;
+      &lt;Or&gt;
+        &lt;TestAncestor&gt;
+          &lt;TestId&gt;NUnit3x::21039B86-BD85-4C8B-93A9-743E73EA01A1::.NETFramework,Version=v4.8::TestProject1.Tests.verifyTotalNumOfUsers&lt;/TestId&gt;
+        &lt;/TestAncestor&gt;
+        &lt;TestAncestor&gt;
+          &lt;TestId&gt;NUnit3x::21039B86-BD85-4C8B-93A9-743E73EA01A1::.NETFramework,Version=v4.8::TestProject1.TestWithPost.PostCallDummyApi&lt;/TestId&gt;
+        &lt;/TestAncestor&gt;
+      &lt;/Or&gt;
+      &lt;TestAncestor&gt;
+        &lt;TestId&gt;NUnit3x::21039B86-BD85-4C8B-93A9-743E73EA01A1::.NETFramework,Version=v4.8::TestProject1.TestWithData.TestGetCall_WithData&lt;/TestId&gt;
+      &lt;/TestAncestor&gt;
+    &lt;/Or&gt;
     &lt;TestAncestor&gt;
-      &lt;TestId&gt;NUnit3x::21039B86-BD85-4C8B-93A9-743E73EA01A1::.NETFramework,Version=v4.8::TestProject1.Tests.verifyTotalNumOfUsers&lt;/TestId&gt;
-    &lt;/TestAncestor&gt;
-    &lt;TestAncestor&gt;
-      &lt;TestId&gt;NUnit3x::21039B86-BD85-4C8B-93A9-743E73EA01A1::.NETFramework,Version=v4.8::TestProject1.TestWithPost.PostCallDummyApi&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::21039B86-BD85-4C8B-93A9-743E73EA01A1::.NETFramework,Version=v4.8::TestProject1.TestWithPost.RetriveDataWithTypeClass&lt;/TestId&gt;
     &lt;/TestAncestor&gt;
   &lt;/Or&gt;
 &lt;/SessionState&gt;</s:String>
@@ -48,6 +58,11 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d8dec2cd_002De026_002D42b5_002Dbe08_002Dfb7e59aa507e/@EntryIndexedValue">&lt;SessionState ContinuousTestingIsOn="False" ContinuousTestingMode="0" FrameworkVersion="{x:Null}" IsLocked="False" Name="PostCallDummyApi #2" PlatformMonoPreference="{x:Null}" PlatformType="{x:Null}" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;NUnit3x::21039B86-BD85-4C8B-93A9-743E73EA01A1::.NETFramework,Version=v4.8::TestProject1.TestWithPost.PostCallDummyApi&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ec873601_002Db4b6_002D4f7e_002D8505_002D0aea1b90fc52/@EntryIndexedValue">&lt;SessionState ContinuousTestingIsOn="False" ContinuousTestingMode="0" FrameworkVersion="{x:Null}" IsLocked="False" Name="RetriveDataWithTypeClass" PlatformMonoPreference="{x:Null}" PlatformType="{x:Null}" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::21039B86-BD85-4C8B-93A9-743E73EA01A1::.NETFramework,Version=v4.8::TestProject1.TestWithPost.RetriveDataWithTypeClass&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	</wpf:ResourceDictionary>

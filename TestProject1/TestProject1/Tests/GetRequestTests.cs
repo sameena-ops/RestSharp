@@ -7,6 +7,7 @@ using System.Linq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using RestSharp.Authenticators;
+using TestProject1.Model;
 using TestProject1.Utilities;
 
 namespace TestProject1
@@ -64,6 +65,19 @@ namespace TestProject1
             //  Console.WriteLine("Status Code: " + response.Content);
             //Console.WriteLine("Status Code: " + (int) response.StatusCode);
             Assert.That((int)response.StatusCode, Is.EqualTo(200));
+        }
+        
+        [Test]
+        public void verifyTotalNumOfUsersUsingPoco()
+        { 
+            _restRequest = new RestRequest("/api/users?page=2", Method.GET);
+            var response = _restClient.Execute<ListOfUsersReqRes>(_restRequest);
+            string adValue = response.Data.Ad.Company;
+            Console.WriteLine(adValue);
+            foreach (var value in response.Data.Data)
+            {
+                Console.WriteLine(value.Email);
+            }
         }
 
         [TearDown]

@@ -52,10 +52,13 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Model\AddUserDummyApi.cs" />
+        <Compile Include="Model\ListOfUsersReqRes.cs" />
         <Compile Include="Model\Users.cs" />
+        <Compile Include="Model\Zippopotam.cs" />
         <Compile Include="Tests\AssemblyInfo.cs" />
         <Compile Include="Tests\GetRequestTests.cs" />
         <Compile Include="Tests\PostRequestTests.cs" />
+        <Compile Include="Tests\TestWithData.cs" />
         <Compile Include="Utilities\Helper.cs" />
     </ItemGroup>
     <ItemGroup>
